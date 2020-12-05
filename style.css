@@ -229,6 +229,7 @@ line-height: 1.875;
     letter-spacing: 0.03em;
     text-transform: uppercase;
     color: var(--titles-color);
+    margin-top: 30px;
 }
 .advantages-discription{
 font-family: var(--roboto-font);
@@ -250,7 +251,30 @@ margin-top: 10px;
     padding-bottom: 94px;
     
     justify-content: space-between;
+}
 
+.container-icon-advantages{
+
+   display: block;
+   padding-top: 25px;
+   padding-bottom: 25px;
+   padding-left: 100px;
+   padding-right: 100px;
+   background-color: #F5F4FA;
+   border-radius: 4px;
+   
+
+
+}
+.icon-advantages{
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    width: 70px;
+    height: 70px;
+}
+.advantages-item{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 
