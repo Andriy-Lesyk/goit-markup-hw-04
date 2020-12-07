@@ -54,16 +54,24 @@ color: #000000;
 .icon-envelope{
     width: 16px;
     height: 12px;
+    margin-right: 10px;
+    fill: #757575;
+    
 }
 .mail-head{
-    margin-left: 10px;
+    display: flex;
+    align-items: center;
+    
 }
 .tel-head{
-    margin-left: 10px;
+    display: flex;
+    align-items: center;
 }
 .icon-smartphone{
-    width: 10px;
-    height: 16px;
+    width:10px;
+    height:16px;
+    margin-right: 10px;
+    fill:#757575
 }
 
 .contacts-smartphone{
@@ -71,22 +79,29 @@ color: #000000;
     display: flex;
     align-items: center;
 }
-.contacts-smartphone:hover, .contacts-smartphone:focus, .contacts-envelope:hover, .coctacts-envelope:focus{
-    fill: var(--accent-color);
-    color: var(--accent-color);
+
 }
 
 .contacts-envelope{
     display: flex;
     align-items: center;
 }
+.icon-envelope:hover, .icon-envelope:focus, .icon-smartphone:hover, .icon-smartphone:focus{
+    fill:var(--accent-color);
+}
+.mail-head:focus .icon-envelope,
+.mail-head:hover .icon-envelope,
+.tel-head:hover .icon-smartphone,
+.tel-head:focus .icon-smartphone{
+    fill:var(--accent-color);
+}
 
 .container{
     width: 1170px;
     padding: 0 15px;
-    margin: 0 auto;
-   
+    margin: 0 auto;   
 }
+
 .header>.container{
     display: flex;
     align-items: center;
