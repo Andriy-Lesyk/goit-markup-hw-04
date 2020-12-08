@@ -53,27 +53,25 @@ color: #000000;
   margin-left: 50px;  
 }
 .mail .icon-envelope{
-    width: 16px;
-    height: 12px;
+    width: 24px;
+    height: 18px;
     margin-right: 10px;
     fill: #757575;
     
 }
-
-
-}
-.mail-head{
-    display: flex;
-    align-items: center;
-    
-}
-.tel-head{
+.mail{
     display: flex;
     align-items: center;
 }
-.icon-smartphone{
-    width:10px;
-    height:16px;
+
+
+.tel{
+    display: flex;
+    align-items: center;
+}
+.tel .icon-smartphone{
+    width: 15px;
+    height:24px;
     margin-right: 10px;
     fill:#757575
 }
@@ -93,10 +91,10 @@ color: #000000;
 .icon-envelope:hover, .icon-envelope:focus, .icon-smartphone:hover, .icon-smartphone:focus{
     fill:var(--accent-color);
 }
-.mail-head:focus .icon-envelope,
-.mail-head:hover .icon-envelope,
-.tel-head:hover .icon-smartphone,
-.tel-head:focus .icon-smartphone{
+.mail:focus .icon-envelope,
+.mail:hover .icon-envelope,
+.tel:hover .icon-smartphone,
+.tel:focus .icon-smartphone{
     fill:var(--accent-color);
 }
 
