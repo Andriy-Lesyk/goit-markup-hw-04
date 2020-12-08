@@ -52,12 +52,15 @@ color: #000000;
 .nav-list:not(:first-child){
   margin-left: 50px;  
 }
-.icon-envelope{
+.mail .icon-envelope{
     width: 16px;
     height: 12px;
     margin-right: 10px;
     fill: #757575;
     
+}
+
+
 }
 .mail-head{
     display: flex;
@@ -214,7 +217,9 @@ font-size: 16px;
 line-height: 1.875;
 text-align: center;
 min-width: 200px;
+min-height: 50px;
 background-color: var(--accent-color);
+border-radius: 4px;
 
 /* identical to box height, or 187% */
 
@@ -508,6 +513,7 @@ margin-bottom: 20px;
 
 .footer-content{
     display: flex;
+    align-items: flex-start;
 }
 .logo-foot{
     color: #ffffff;    
@@ -521,11 +527,12 @@ margin-bottom: 20px;
 }
 .container-join{
     margin-left: 70px;
+    padding-top: 15px;
 }
 .container-join .container-social-list{
     padding-left: 0;
 }
-.adress-gorod{
+.adress-sity{
 font-family: var(--roboto-font);
 font-style: normal;
 font-weight: normal;
@@ -533,12 +540,14 @@ font-size: 14px;
 line-height: 24px1.714;
 letter-spacing: 0.03em;
 color: #FFFFFF;
+margin-bottom: 9px;
 }
 .container-join .social-link{
-    
-
-
-    
+        
+}
+.mail-footer{
+    display: block;
+    margin-bottom: 9px;
 }
 
 
