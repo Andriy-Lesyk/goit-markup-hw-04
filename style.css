@@ -75,6 +75,9 @@ color: #000000;
     margin-right: 10px;
     fill:#757575
 }
+.current{
+    color:var(--accent-color);
+}
 
 .contacts-smartphone{
     margin-left: 50px;
@@ -515,6 +518,9 @@ margin-bottom: 20px;
 }
 .logo-foot{
     color: #ffffff;    
+}
+.social-link-footer{
+    background: rgba(255, 255, 255, 0.1);
 }
 
 .container-logo{
