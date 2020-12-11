@@ -75,10 +75,33 @@ color: #000000;
     margin-right: 10px;
     fill:#757575
 }
-.current{
+.current-studio{
     color:var(--accent-color);
 }
+.current-studio::after{
+    content:'';
+    width: 100%;
+    display: block;
+    height: 4px;
+    background-color: var(--accent-color);
+    position: absolute;
+    top: 44px;
+    
+}
 
+.current-portfolio{
+    color:var(--accent-color);
+}
+.current-portfolio::after{
+    content:'';
+    width: 100%;
+    display: block;
+    height: 4px;
+    background-color: var(--accent-color);
+    position: absolute;
+    top: 45px;
+    
+}
 .contacts-smartphone{
     margin-left: 50px;
     display: flex;
@@ -139,6 +162,7 @@ letter-spacing: 0.02em;
 }
 .nav-list{
     color: var(--titles-color);
+    position: relative;
 }
 .nav-list, .contacts, .advantages-list, .we_made_job-list, .our-team-list, .btn-list, .examples-list {
 list-style: none;
@@ -557,6 +581,34 @@ margin-bottom: 9px;
 
 /*------------------END FOOTER-----------------*/
 
+/*------------------MODAL WINDOW---------------*/
+
+.backdrop{
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top:0;
+    left:0;
+    background: rgba(0, 0, 0, 0.2);
+}
+.backdrop.is-hidden{
+    opacity: 0;
+    pointer-events: none;
+}
+
+.modal{
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%, -50%);
+
+    width: 528px;
+    height: 581px;
+    background-color: #ffffff;
+}
+
+/*--------------END MODAL WINDOW---------------*/
+
 /*------------------PORTFOLIO------------------*/
 
 .portfolio-body{
@@ -568,6 +620,11 @@ justify-content: center;
 padding-bottom: 34px;
 padding-top: 94px;
 
+}
+
+.header-portfolio{
+    border-bottom: 1px solid #ECECEC;
+       
 }
 
 
@@ -631,6 +688,7 @@ line-height: 1.625;
 text-align: center;
 letter-spacing: 0.03em;
 color: var(--titles-color);
+
 }
 .btn-sheet:not(:last-child){
     margin-right: 8px;
